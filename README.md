@@ -11,7 +11,42 @@ The story map contain following features:
     - Price
     - Opening hours
     - Name
+- Lastly a route map
 
 See the online Map here [https://arcg.is/0nKm840](https://arcg.is/0nKm840)
+
 ---
 
+# Making tree inventory and virtual plot using LiDAR and UAV data
+![](images/tree_inventory.png)
+
+The project was divided into two tasks:
+1. A pine tree inventory from LiDAR and UAV data.
+2. Create a virtual sample plot with a radius of 12.62 m
+
+## Task 1:
+1. Generate and calculate CHM_LiDAR base on the difference between DTM_LiDAR and
+DSM_LiDAR
+2. Generate and calculate CHM_UAV base on the difference between DTM_LiDAR and
+DSM_UAV
+3. Make a trees segmentation base on CHM_UAV and CHM_LiDAR and calculate:
+    - The number of trees
+    - The maximum, minimum and mean height (TH)
+    - The mean diameter of crowns
+    - The mean crown area and the histogram of crown areas
+    - The mean DBH (Diameter at breast height) base on the formula for the pine height
+(TH) expressed by: `𝐷𝐵𝐻 = 0.3029 ∗ 𝑇𝐻^{1.47225}`
+4. Create a comparison of the above results between CHM_UAV and CHM_LiDAR
+    - UAV tree inventory result can be found here [UAV DATA](results/UAV_all.xlsx)
+    - LiDAR tree inventory result can be found here [LiDAR DATA](results/LiDar_all.xlsx)
+
+## Task 2:
+1.  Calculate Laser Penetration Index (LPI) base on the total number of ground points from
+LiDAR data (GR) and the total number of all points from LiDAR data (AR)
+`LPI = GR/AR`
+2. Add a one random point within the extend and create a virtual sample plot with a radius of 12.62 m
+3. Calculate all metrics for the plot base on the segmentation mentioned in point number 3 of task 1 and
+ for LiDAR data only
+    - The result can be found here [Virtual Plot DATA](results/UAV_AOI.xlsx)
+4. Virtually cut all the trees and create solar radiation presentation for this artificial gap,
+5. Create a final layout with the results of all the calculation.
