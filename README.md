@@ -64,3 +64,15 @@ The task is to visulization of point which are recorded from GNSS, GPS corrected
 
 ---
 
+# Photovoltaic cost analysis for selected urban areas in Warsaw
+![](images/photovoltanic.jpg)
+The task is to process a LiDAR data from an urban area for locating photovoltanic site and a cost analysis for photovoltanic palenls.
+the project requirements is as follows:
+- Crop the las file to a with dimensions of 200x200 meters
+- The raster resolution should be 20x20 meters
+- Aspect should be within 112,5 to 247,5 degrees
+
+The task is done in ArcGIS using [LAStools](https://rapidlasso.com/lastools/) toolbox. The full workflow is given below
+![](images/voltanice_process.png)
+
+---
