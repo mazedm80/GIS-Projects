@@ -50,3 +50,17 @@ LiDAR data (GR) and the total number of all points from LiDAR data (AR)
     - The result can be found here [Virtual Plot DATA](results/UAV_AOI.xlsx)
 4. Virtually cut all the trees and create solar radiation presentation for this artificial gap,
 5. Create a final layout with the results of all the calculation.
+
+---
+
+# Comparison of GNSS, GPS and Mobile GPS and its error in the Forest environment
+![](images/GNSS.png)
+The task is to visulization of point which are recorded from GNSS, GPS corrected, GPS uncorrected and Mobile GPS devices in a forest path.
+- There are 25 reference point and in each point data were recorded from ths mentioned devices
+- In every point take a picture of the skyview
+- Compare the error of the devices to the reference points
+- Show a statistical comparison between the devices
+- The [Excel table](results/reference_with_distance.dbf.xlsx) is exported from ArcGIS attribute table and the furture modified
+
+---
+
