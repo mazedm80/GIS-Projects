@@ -16,6 +16,7 @@ The story map contain following features:
 See the online Map here [https://arcg.is/0nKm840](https://arcg.is/0nKm840)
 
 ---
+</br></br>
 
 # Making tree inventory and virtual plot using LiDAR and UAV data
 ![](images/tree_inventory.png)
@@ -52,6 +53,7 @@ LiDAR data (GR) and the total number of all points from LiDAR data (AR)
 5. Create a final layout with the results of all the calculation.
 
 ---
+</br></br>
 
 # Comparison of GNSS, GPS and Mobile GPS and its error in the Forest environment
 ![](images/GNSS.png)
@@ -63,6 +65,7 @@ The task is to visulization of point which are recorded from GNSS, GPS corrected
 - The [Excel table](results/reference_with_distance.dbf.xlsx) is exported from ArcGIS attribute table and the furture modified
 
 ---
+</br></br>
 
 # Photovoltaic cost analysis for selected urban areas in Warsaw
 ![](images/photovoltanic.jpg)
@@ -76,3 +79,14 @@ The task is done in ArcGIS using [LAStools](https://rapidlasso.com/lastools/) to
 ![](images/voltanice_process.png)
 
 ---
+</br></br>
+
+# Find location for timber yard, which must be in the area where all following conditions are satisfied:
+- Forest with _Birch_ tree species
+- Forest with _Fresh pine/coniferous forest_ site type
+- Forest with _acidic_ soil
+- Located 130 m aboce see level (avoide possible flood region)
+- Located within 3200 m (driving through road network) from _Woroszyly_ town
+
+The final output after all the analysis looks like below image:
+![](images/spatial_analysis.png)
